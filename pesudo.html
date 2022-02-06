@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :hover, :visited , :active :link pesudo class */
+        h1:hover{
+            background-color:rgb(14, 14, 107);
+            color: white;
+            padding: 10px;
+        
+        }
+        a:link{
+            color: rgb(9, 73, 73);
+           
+        }
+        a:visited{
+            color: rgb(255, 11, 72);
+           
+        }
+        a:hover{
+            background-color: indianred;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+        }
+        a:active{
+            background-color: blue;
+        }
+        /* first and last child effect */
+        #effect li:first-child{
+            color: rgb(255, 255, 255);
+            background-color: brown;
+        }
+        #effect li:last-child{
+            background-color:indianred;
+            color: white;
+        }
+        /* use nth-child effect */
+       
+.nth-child li:nth-child(2n){
+    background-color: rgb(75, 214, 233);
+    color:rgb(0, 0, 0);
+
+}
+.nth-child li:nth-child(2n+1){
+    background-color: rgb(88, 154, 173);
+}
+h3::after{
+  content: ' akash';
+}
+h3::before{
+    content: 'Tumi ';
+}
+h3::first-letter{
+    font-size: x-large;
+    color: indianred;
+}
+h3::selection{
+    color: red;
+    background-color: yellow;
+}
+    </style>
+</head>
+<body>
+    <h1>Use pesudo class</h1>
+    <h3>amar sonar_1</h3>
+    <h3>amar sonar_2</h3>
+    <h3>amar sonar_3</h3>
+    <a href="https://getbootstrap.com/docs/5.1/layout/grid/">Google</a>
+    <ul id="effect">
+        <li id="after-effect">Developer-1</li>
+        <li>Developer-2</li>
+        <li>Developer-3</li>
+        <li>Developer-4</li>
+        <li>Developer-5</li>
+    </ul>
+    <ul class="nth-child">
+        <li>This is nath-child-1</li>
+        <li>This is nath-child-2</li>
+        <li>This is nath-child-3</li>
+        <li>This is nath-child-4</li>
+        <li>This is nath-child-5</li>
+        <li>This is nath-child-6</li>
+        <li>This is nath-child-7</li>
+        <li>This is nath-child-8</li>
+        <li>This is nath-child-9</li>
+    </ul>
+</body>
+</html>
